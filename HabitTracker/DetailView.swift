@@ -12,10 +12,20 @@ struct DetailView: View {
     @ObservedObject var habits: Habits
     let habit: Habit
     
+    var sessions: Int {
+        get {
+            if let habit_index = habits.items.firstIndex(of: habit) {
+                return habits.items[habit_index].sessions
+            } else {
+                return habit.sessions
+            }
+        }
+    }
+    
     var body: some View {
         VStack {
             Spacer()
-            Text("You have completed \(habit.sessions) sessions")
+            Text("You have completed \(sessions) sessions")
             Spacer()
             Button {
                 let temp_habit = Habit(name: habit.name, sessions: habit.sessions + 1)
