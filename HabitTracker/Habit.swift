@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Habit: Codable, Identifiable {
+struct Habit: Codable, Identifiable, Equatable {
     var id = UUID()
     let name: String
     let sessions: Int

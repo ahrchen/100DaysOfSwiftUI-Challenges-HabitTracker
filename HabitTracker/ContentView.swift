@@ -30,7 +30,11 @@ struct ContentView: View {
         NavigationView {
             List {
                 ForEach(habits.items) { item in
-                    ListView(habit: item)
+                    NavigationLink {
+                        DetailView(habits: habits, habit: item)
+                    } label : {
+                        ListView(habit: item)
+                    }
                 }
                 .onDelete(perform: removeItems)
             }
