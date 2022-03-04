@@ -11,6 +11,9 @@
 		EE535D0627D18B00005B52A7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE535D0527D18B00005B52A7 /* ContentView.swift */; };
 		EE535D0827D18B01005B52A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE535D0727D18B01005B52A7 /* Assets.xcassets */; };
 		EE535D0B27D18B01005B52A7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE535D0A27D18B01005B52A7 /* Preview Assets.xcassets */; };
+		EE535D1227D18B36005B52A7 /* Habit.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE535D1127D18B36005B52A7 /* Habit.swift */; };
+		EE535D1427D18EF4005B52A7 /* Habits.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE535D1327D18EF4005B52A7 /* Habits.swift */; };
+		EE535D1627D19002005B52A7 /* AddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE535D1527D19002005B52A7 /* AddView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +22,9 @@
 		EE535D0527D18B00005B52A7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		EE535D0727D18B01005B52A7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EE535D0A27D18B01005B52A7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		EE535D1127D18B36005B52A7 /* Habit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Habit.swift; sourceTree = "<group>"; };
+		EE535D1327D18EF4005B52A7 /* Habits.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Habits.swift; sourceTree = "<group>"; };
+		EE535D1527D19002005B52A7 /* AddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,7 +57,10 @@
 		EE535D0227D18B00005B52A7 /* HabitTracker */ = {
 			isa = PBXGroup;
 			children = (
+				EE535D1327D18EF4005B52A7 /* Habits.swift */,
+				EE535D1127D18B36005B52A7 /* Habit.swift */,
 				EE535D0327D18B00005B52A7 /* HabitTrackerApp.swift */,
+				EE535D1527D19002005B52A7 /* AddView.swift */,
 				EE535D0527D18B00005B52A7 /* ContentView.swift */,
 				EE535D0727D18B01005B52A7 /* Assets.xcassets */,
 				EE535D0927D18B01005B52A7 /* Preview Content */,
@@ -137,7 +146,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE535D1227D18B36005B52A7 /* Habit.swift in Sources */,
 				EE535D0627D18B00005B52A7 /* ContentView.swift in Sources */,
+				EE535D1627D19002005B52A7 /* AddView.swift in Sources */,
+				EE535D1427D18EF4005B52A7 /* Habits.swift in Sources */,
 				EE535D0427D18B00005B52A7 /* HabitTrackerApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
