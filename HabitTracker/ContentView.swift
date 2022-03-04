@@ -9,14 +9,29 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    struct ListView: View {
+        var habit: Habit
+        
+        var body: some View {
+            HStack {
+                Text(habit.name)
+                Spacer()
+                Text("Sessions: \(habit.sessions)")
+            }
+        }
+    }
+    
     @StateObject var habits = Habits()
     
     @State private var showingAddHabit = false
     
     var body: some View {
         NavigationView {
-            VStack {
-                Text("\(habits.items.count)")
+            List {
+                ForEach(habits.items) { item in
+                    ListView(habit: item)
+                }
             }
             .navigationTitle("HabitTracker")
             .toolbar {
@@ -31,8 +46,6 @@ struct ContentView: View {
             AddView(habits: habits)
         }
     }
-    
-    
 }
 
 struct ContentView_Previews: PreviewProvider {
