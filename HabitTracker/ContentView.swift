@@ -32,6 +32,7 @@ struct ContentView: View {
                 ForEach(habits.items) { item in
                     ListView(habit: item)
                 }
+                .onDelete(perform: removeItems)
             }
             .navigationTitle("HabitTracker")
             .toolbar {
@@ -45,6 +46,10 @@ struct ContentView: View {
         .sheet(isPresented: $showingAddHabit) {
             AddView(habits: habits)
         }
+    }
+    
+    func removeItems(at offsets: IndexSet) {
+        habits.items.remove(atOffsets: offsets)
     }
 }
 
